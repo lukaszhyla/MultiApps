@@ -36,10 +36,7 @@
         <activity android:name=".MainActivity" />
         <activity android:name=".LoadImageActivity" />
         <activity android:name=".SMSActivity" />
-        <activity
-            android:name=".BasicActivity"
-            android:label="@string/title_activity_basic"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".StonePaperScissorsActivity"></activity>
     </application>
 
 </manifest>

@@ -3,6 +3,8 @@ package com.lhyla.p23databinding;
 import android.Manifest;
 import android.content.DialogInterface;
 import android.content.pm.PackageManager;
+import android.support.design.widget.BaseTransientBottomBar;
+import android.support.design.widget.Snackbar;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -81,6 +83,11 @@ public class SMSActivity extends AppCompatActivity {
 
             // za pomoca Log mozemy zrobic log momencie wyslania SMS . Ten log jest widoczny w ANdroid Monitorze.
             Log.d(TAG, "SMS Wysłany");
+
+
+            Snackbar.make
+                    (getCurrentFocus(), "SMS Successfully sent", Snackbar.LENGTH_LONG)
+                    .show();
 
             // ponizej na dwa sposoby czyscimy wpisane kontrolki
             numerTelefonu.setText("");
