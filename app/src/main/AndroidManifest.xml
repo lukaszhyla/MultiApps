@@ -43,7 +43,10 @@
             android:label="Hello World"
             android:parentActivityName=".StartingActivity" />
         <activity android:name=".CountriesActivity" />
-        <activity android:name=".NavigationActivity"></activity>
+        <activity android:name=".NavigationActivity" />
+        <activity android:name=".MojTab2Fragment" />
+        <activity android:name=".SimpleListViewActivity" />
+        <activity android:name=".RecycleViewActivity"></activity>
     </application>
 
 </manifest>

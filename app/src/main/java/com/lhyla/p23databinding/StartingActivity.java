@@ -4,6 +4,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.provider.Telephony;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.widget.Button;
 
 import butterknife.BindView;
@@ -12,6 +14,7 @@ import butterknife.OnClick;
 
 public class StartingActivity extends AppCompatActivity {
 
+    private final static String TAG = "LH";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -64,6 +67,13 @@ public class StartingActivity extends AppCompatActivity {
     @OnClick(R.id.start_act_go_navigation_act_btn)
     protected void goNavigationAct() {
         Intent i = new Intent(this, NavigationActivity.class);
+        startActivity(i);
+    }
+
+    @OnClick(R.id.start_act_go_recycle_act_btn)
+    protected void goRecyclenAct() {
+        Intent i = new Intent(this, RecycleViewActivity.class);
+        Log.d(TAG, "Go Recycle Acy on Click");
         startActivity(i);
     }
 
