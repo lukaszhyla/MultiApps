@@ -36,7 +36,14 @@
         <activity android:name=".MainActivity" />
         <activity android:name=".LoadImageActivity" />
         <activity android:name=".SMSActivity" />
-        <activity android:name=".StonePaperScissorsActivity"></activity>
+        <activity android:name=".StonePaperScissorsActivity" />
+        <activity android:name=".CollapsingActivity" />
+        <activity
+            android:name=".ToolbarActivity"
+            android:label="Hello World"
+            android:parentActivityName=".StartingActivity" />
+        <activity android:name=".CountriesActivity" />
+        <activity android:name=".NavigationActivity"></activity>
     </application>
 
 </manifest>

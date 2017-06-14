@@ -8,6 +8,11 @@
         <item name="colorButtonNormal">@color/primary</item>
     </style>
 
+    <style name="MyActionBar" parent="AppTheme.NoActionBar">
+        <item name="android:textColorPrimary">@color/accent</item>
+        <item name="android:textColor">@color/accent</item>
+    </style>
+
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>

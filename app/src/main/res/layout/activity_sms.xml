@@ -1,67 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:fitsSystemWindows="true"
     tools:context="com.lhyla.p23databinding.SMSActivity">
 
-    <EditText
-        android:id="@+id/numerTelefonu"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:layout_marginBottom="10dp"
-        android:hint="Wpisz numer telefonu"
-        android:inputType="phone" />
+        android:orientation="vertical">
 
-    <EditText
-        android:id="@+id/textWiadomosci"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:lines="3"
-        android:layout_marginBottom="10dp"
-        android:hint="wpisz treść sms"
-        android:inputType="textMultiLine" />
-
-    <Button
-        android:id="@+id/btnDostep"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        android:text="Sprawdź dostęp" />
-
-    <Button
-        android:id="@+id/btnOblicz"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Oblicz" />
-
-    <Button
-        android:id="@+id/btnSMS"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:enabled="false"
-        android:text="Wyślij sms" />
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        >
-        <android.support.design.widget.FloatingActionButton
-            android:src="@drawable/ic_fab"
-            android:id="@+id/sms_act_send_sms_fab_btn"
-            app:fabSize="normal"
-            android:layout_width="wrap_content"
+        <EditText
+            android:id="@+id/numerTelefonu"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentRight="true"
-            android:layout_margin="25dp"
+            android:layout_marginBottom="10dp"
+            android:ems="10"
+            android:hint="Wpisz numer telefonu"
+            android:inputType="phone" />
+
+        <EditText
+            android:id="@+id/textWiadomosci"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:ems="10"
+            android:fitsSystemWindows="true"
+            android:hint="wpisz treść sms"
+            android:inputType="textMultiLine"
+            android:lines="3"
+
             />
-    </RelativeLayout>
+
+        <Button
+            android:id="@+id/btnDostep"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center"
+            android:layout_marginBottom="10dp"
+            android:text="Sprawdź dostęp"
+
+            />
+
+        <Button
+            android:id="@+id/btnOblicz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center"
+            android:text="Oblicz"
+
+            />
+
+        <Button
+            android:id="@+id/btnSMS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center"
+            android:enabled="false"
+            android:fitsSystemWindows="true"
+            android:text="Wyślij sms"
+
+            />
 
 
+    </LinearLayout>
 
-</LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/sms_act_send_sms_fab_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="25dp"
+        android:fitsSystemWindows="true"
+        android:src="@drawable/ic_fab"
+        app:fabSize="normal"
+
+        />
+
+</android.support.design.widget.CoordinatorLayout>

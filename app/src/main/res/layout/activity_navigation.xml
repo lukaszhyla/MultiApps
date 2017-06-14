@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lhyla.p23databinding.NavigationActivity">
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/navigation_act_main_tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    
+        <android.support.design.widget.TabItem
+            android:layout_width="0dp"
+            android:text="Name"
+            android:layout_height="wrap_content" >
+
+        </android.support.design.widget.TabItem>
+        <android.support.design.widget.TabItem
+            android:layout_width="0dp"
+            android:text="Surname"
+            android:layout_height="wrap_content" />
+        <android.support.design.widget.TabItem
+            android:layout_width="0dp"
+            android:text="Age"
+            android:layout_height="wrap_content" />
+    </android.support.design.widget.TabLayout>
+</LinearLayout>

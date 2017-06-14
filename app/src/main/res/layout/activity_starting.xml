@@ -1,51 +1,95 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    android:orientation="vertical"
-    xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.lhyla.p23databinding.StartingActivity"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.lhyla.p23databinding.StartingActivity">
+    android:layout_height="wrap_content">
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:src="@drawable/logo"/>
-    <Button
-        android:layout_gravity="center_horizontal"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="MainActivity"
-        android:id="@+id/start_act_go_main_act_btn"
-        android:textAlignment="center"
-        android:textSize="16sp"/>
-    <Button
-        android:layout_gravity="center_horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="LoadImageActivity"
-        android:id="@+id/start_act_go_load_image_act_btn"
-        android:textAlignment="center"
-        android:textSize="16sp"/>
+        android:orientation="vertical"
+        >
 
-    <Button
-        android:layout_gravity="center_horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="SMSActivity"
-        android:id="@+id/start_act_go_sms_act_btn"
-        android:textAlignment="center"
-        android:textSize="16sp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/logo" />
 
-    <Button
-        android:layout_gravity="center_horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Stone, paper, scissors game"
-        android:id="@+id/start_act_go_stone_paper_scissors_game_btn"
-        android:textAlignment="center"
-        android:textSize="16sp"/>
+        <Button
+            android:id="@+id/start_act_go_main_act_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="MainActivity"
+            android:textAlignment="center"
+            android:textSize="16sp" />
 
+        <Button
+            android:id="@+id/start_act_go_load_image_act_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="LoadImageActivity"
+            android:textAlignment="center"
+            android:textSize="16sp" />
 
-</LinearLayout>
+        <Button
+            android:id="@+id/start_act_go_sms_act_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="SMSActivity"
+            android:textAlignment="center"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/start_act_go_stone_paper_scissors_game_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Stone, paper, scissors game"
+            android:textAlignment="center"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/start_act_go_collapsing_act_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Collapsing Activity"
+            android:textAlignment="center"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/start_act_go_toolbar_act_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Toolbar Activity"
+            android:textAlignment="center"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/start_act_go_countries_act_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Countries Activity"
+            android:textAlignment="center"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/start_act_go_navigation_act_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Navigation Activity"
+            android:textAlignment="center"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</ScrollView>
